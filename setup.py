@@ -41,7 +41,7 @@ if len(sys.argv) >= 2 and \
 
 info = {}
 fname = join('mayavi', '__init__.py')
-exec(compile(open(fname).read(), fname, 'exec'), info)
+exec(compile(open(fname, encoding='utf-8').read(), fname, 'exec'), info)
 
 DEFAULT_HTML_TARGET_DIR = join('docs', 'build')
 DEFAULT_INPUT_DIR = join('docs', 'source',)
